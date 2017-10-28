@@ -2,6 +2,18 @@
 #define CLASSDEF_H
 
 // class prototypes
+
+class kids {
+private:
+  std::string name;
+
+public:
+  kids();
+  kids(std::string &newkid);
+  void getName();
+};
+
+/*
 template<class T>
 class stackInterface {                  // Credit: F.Carrano & T.Henry
 private:                                // "Data Abstraction & Problem Solving
@@ -34,5 +46,5 @@ public:
 
 // function prototypes
 void intro();
-
+*/
 #endif // CLASSDEF_H

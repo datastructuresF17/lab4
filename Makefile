@@ -1,6 +1,6 @@
 
 output: giftlist.o classdef.o
-	g++ giftlist.o classdef.o -o lab4
+	g++ giftlist.o classdef.o -o run
 
 giftlist.o: giftlist.cpp
 	g++ -c giftlist.cpp
