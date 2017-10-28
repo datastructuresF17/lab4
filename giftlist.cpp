@@ -12,5 +12,11 @@ using namespace std;
 
 int main() {
     cout << "Hello" << endl;
+
+    //std::unique_ptr<int> kidsPtr (new int);  // smart pointer to kids object
+    std::list<kids> first;  // empty list of kids objects?
+
+    // Goal: create a dynamic list of kids objects using smart pointers
+
     return 0;
 }
