@@ -30,3 +30,7 @@ void Kids::displayGifts() {
         giftNum++;
     }
 }
+
+void Kids::addGift(string &gift) {
+    giftList.push_back(gift);
+}
