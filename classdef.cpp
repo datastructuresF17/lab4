@@ -34,3 +34,20 @@ void Kids::displayGifts() {
 void Kids::addGift(string &gift) {
     giftList.push_back(gift);
 }
+
+Kids::~Kids() {}
+
+Kids addToList(std::string &name) {
+    string toy;
+    list<string> wishList;
+
+    cout << "Enter gifts for " << name << " followed by 'Enter':" << endl;
+    getline(cin, toy);
+    while (toy != "") {
+        wishList.push_back(toy);
+        //cout << endl;
+        getline(cin, toy);
+    }
+    Kids newkid(name, wishList);
+    return newkid;
+}

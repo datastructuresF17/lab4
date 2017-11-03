@@ -11,25 +11,24 @@
 using namespace std;
 
 int main() {
-    cout << "Hello" << endl;
-/*
-    unique_ptr<Kids> kidPtr (new Kids);  // smart pointer to kids object
-    std::list<Kids> niceList;  // empty list of kids objects?
-    std::string entry;
-    std::string toys;
+
+    list<Kids> niceList;  // empty list of kids objects
+    string entry;
+
+    cout << "Enter kid name: ";
+    getline(cin, entry);
 
     while (entry != "") {
-        cout << "Enter name: ";
-        cin >> entry;
-        while (toys != "") {
-            cout << "Enter toys: ";
-            cin >> toys;
-        }
+        Kids niceKid = addToList(entry);
+        niceList.push_back(niceKid);
+        cout << "Enter another name: ";
+        getline(cin, entry);
     }
+
+    cout << "DONE" << endl;
 
     // Goal: create a dynamic list of kids objects using smart pointers
 
-    std::list<Kids> niceList;
-*/
+
     return 0;
 }

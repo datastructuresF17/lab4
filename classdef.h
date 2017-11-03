@@ -20,4 +20,6 @@ public:
 
 // function prototypes
 
+Kids addToList(std::string &name);
+
 #endif // CLASSDEF_H
