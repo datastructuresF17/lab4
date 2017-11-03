@@ -12,20 +12,20 @@ using namespace std;
 
 int main() {
 
-    list<Kids> niceList;  // empty list of kids objects
+    list<Kids> niceList;                    // empty list of kids objects
     string entry;
 
-    cout << "Enter kid name: ";
+    cout << "Enter kid name: ";             // get kid name
     getline(cin, entry);
 
     while (entry != "") {
-        Kids niceKid = addToList(entry);
-        niceList.push_back(niceKid);
-        cout << "Enter another name: ";
+        Kids niceKid = addToList(entry);    // make a gift list and create kid object
+        niceList.push_back(niceKid);        // add kid object to niceList
+        cout << "Enter another name: ";     // repeat until blank entry
         getline(cin, entry);
     }
 
-    cout << "DONE" << endl;
+    
 
     // Goal: create a dynamic list of kids objects using smart pointers
 
