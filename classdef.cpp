@@ -22,5 +22,11 @@ void Kids::setList(std::list<std::string> &list) {
 }
 
 void Kids::displayGifts() {
-    
+    int giftNum = 1;
+    for(list<string>::iterator it = giftList.begin();
+        it != giftList.end(); it++)
+    {
+        cout << giftNum << ": " << (*it) << endl;
+        giftNum++;
+    }
 }
