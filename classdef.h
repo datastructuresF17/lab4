@@ -14,6 +14,7 @@ public:
     void setList(std::list<std::string> &list);
     void displayGifts();
     void addGift(std::string &gift);
+    std::string getName();
     //void getName();
     ~Kids();
 };
@@ -21,5 +22,6 @@ public:
 // function prototypes
 
 Kids addToList(std::string &name);
+void displayObj(Kids &obj);
 
 #endif // CLASSDEF_H

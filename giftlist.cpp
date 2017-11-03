@@ -24,11 +24,15 @@ int main() {
         cout << "Enter another name: ";     // repeat until blank entry
         getline(cin, entry);
     }
+    cout << "\nSanta's nice list:" << endl;
 
-    
-
-    // Goal: create a dynamic list of kids objects using smart pointers
-
+    for (list<Kids>::iterator it = niceList.begin();       // display niceList
+         it != niceList.end(); it++)
+    {
+        Kids kid = *it;
+        displayObj(kid);
+        cout << endl;
+    }
 
     return 0;
 }

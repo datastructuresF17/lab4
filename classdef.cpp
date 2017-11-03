@@ -35,6 +35,10 @@ void Kids::addGift(string &gift) {
     giftList.push_back(gift);
 }
 
+std::string Kids::getName() {
+    return name;
+}
+
 Kids::~Kids() {}
 
 Kids addToList(std::string &name) {
@@ -50,4 +54,11 @@ Kids addToList(std::string &name) {
     }
     Kids newkid(name, wishList);
     return newkid;
+}
+
+void displayObj(Kids &obj) {
+    //Kids kid = obj;
+    string name = obj.getName();
+    cout << name << endl;
+    obj.displayGifts();
 }
