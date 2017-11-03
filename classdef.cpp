@@ -49,7 +49,6 @@ Kids addToList(std::string &name) {
     getline(cin, toy);
     while (toy != "") {
         wishList.push_back(toy);
-        //cout << endl;
         getline(cin, toy);
     }
     Kids newkid(name, wishList);
@@ -57,7 +56,6 @@ Kids addToList(std::string &name) {
 }
 
 void displayObj(Kids &obj) {
-    //Kids kid = obj;
     string name = obj.getName();
     cout << name << endl;
     obj.displayGifts();

@@ -6,7 +6,6 @@
 #include<iostream>
 #include<string>
 #include<list>
-#include<memory>
 #include "classdef.h"
 using namespace std;
 

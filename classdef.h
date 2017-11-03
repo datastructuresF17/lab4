@@ -15,7 +15,6 @@ public:
     void displayGifts();
     void addGift(std::string &gift);
     std::string getName();
-    //void getName();
     ~Kids();
 };
 
